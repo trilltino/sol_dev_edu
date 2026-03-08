@@ -58,7 +58,7 @@ const Navbar = () => {
             <div className="nav-dropdown-menu">
               <Link to="/what" className="nav-dropdown-item" onClick={() => setWsAndHDropdownOpen(false)}>What</Link>
               <Link to="/when" className="nav-dropdown-item" onClick={() => setWsAndHDropdownOpen(false)}>When</Link>
-              <Link to="/where" className="nav-dropdown-item" onClick={() => setWsAndHDropdownOpen(false)}>Where</Link>
+              <Link to="/where-and-who" className="nav-dropdown-item" onClick={() => setWsAndHDropdownOpen(false)}>Where & Who</Link>
               <Link to="/why" className="nav-dropdown-item" onClick={() => setWsAndHDropdownOpen(false)}>Why</Link>
               <Link to="/how" className="nav-dropdown-item" onClick={() => setWsAndHDropdownOpen(false)}>How</Link>
             </div>

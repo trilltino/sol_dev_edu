@@ -9,6 +9,7 @@ import {
   WhatPage,
   WhenPage,
   WherePage,
+  WhereAndWhoPage,
   WhyPage,
   HowPage,
   BeginnerPage,
@@ -24,7 +25,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/sol_dev_edu">
       <div className="app-container">
         <Navbar />
 
@@ -38,6 +39,7 @@ function App() {
               <Route path="/what" element={<WhatPage />} />
               <Route path="/when" element={<WhenPage />} />
               <Route path="/where" element={<WherePage />} />
+              <Route path="/where-and-who" element={<WhereAndWhoPage />} />
               <Route path="/why" element={<WhyPage />} />
               <Route path="/how" element={<HowPage />} />
               <Route path="/beginner" element={<BeginnerPage />} />

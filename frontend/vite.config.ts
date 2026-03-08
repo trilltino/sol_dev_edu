@@ -5,4 +5,16 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: '/sol_dev_edu/',
+  server: {
+    host: '0.0.0.0',
+    port: 5173,
+    strictPort: true,
+    hmr: {
+      clientPort: 5173
+    }
+  },
+  appType: 'spa',
+  build: {
+    outDir: 'dist'
+  }
 })
