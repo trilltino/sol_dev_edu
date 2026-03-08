@@ -15,7 +15,6 @@ import {
   IntermediatePage,
   AdvancedPage,
   WalkthroughPage,
-  VideoContentPage,
   TinosRustLabPage,
   SuperteamLearnIDEExtensionPage,
   SuperteamLearnAppPage,

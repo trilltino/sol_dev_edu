@@ -3,8 +3,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const WORDS = ['Build', 'Grow', 'Ship', 'Learn'];
 
-const landingQuote = "The future belongs to those who learn more simply.";
-
 export const LandingPage = () => {
   const [index, setIndex] = useState(0);
   const [showUK, setShowUK] = useState(false);
