@@ -25,7 +25,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router basename="/sol_dev_edu">
+    <Router>
       <div className="app-container">
         <Navbar />
 
