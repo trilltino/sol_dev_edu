@@ -3,6 +3,19 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const WORDS = ['Build', 'Grow', 'Ship', 'Learn'];
 
+const cardVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: (i: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.8 + i * 0.15,
+      duration: 0.6,
+      ease: 'easeOut',
+    },
+  }),
+};
+
 export const LandingPage = () => {
   const [index, setIndex] = useState(0);
   const [showUK, setShowUK] = useState(false);
@@ -57,36 +70,49 @@ export const LandingPage = () => {
 
         <AnimatePresence>
           {complete && (
-            <>
-              <motion.div
-                className="subheader cycling-subtitle"
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-              >
-                unlocking your&nbsp;<span className="accent">potential</span>
-              </motion.div>
-              <SuperteamLearnUKCards />
-            </>
+            <motion.div
+              className="subheader cycling-subtitle"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              unlocking your&nbsp;<span className="accent">potential</span>
+            </motion.div>
           )}
         </AnimatePresence>
+        <SuperteamLearnUKCards />
       </header>
     </motion.div>
   );
 };
 
 const SuperteamLearnUKCards = () => {
+  const cards = [
+    {
+      title: 'Addressing the UK Talent Gap',
+      description: 'SuperteamLearnUK is specifically designed to cultivate a pipeline of skilled Solana developers within the United Kingdom.',
+    },
+    {
+      title: 'Onboarding Developers onto Superteam, SuperteamEarn and SuperteamTalentUK',
+      description: 'Structured learning paths transform candidates into job-ready engineers equipped with industry best practices, ready to contribute to the Superteam ecosystem.',
+    },
+    {
+      title: 'Solana Ecosystem Mastery',
+      description: 'Comprehensive training in Rust, Anchor, and Solana development—building the technical foundation for Web3.',
+    },
+  ];
+
   return (
     <motion.div
       className="learn-uk-section"
-      initial={{ opacity: 0, y: 30 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, delay: 0.5 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5, delay: 0.5 }}
     >
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.3 }}
+        transition={{ duration: 0.6, delay: 0.6 }}
         style={{ 
           fontSize: '2rem', 
           fontWeight: 700, 
@@ -97,29 +123,20 @@ const SuperteamLearnUKCards = () => {
         Objectives
       </motion.h2>
       <div className="learn-uk-cards">
-        <div className="learn-uk-card">
-          <div className="card-icon"></div>
-          <h3>Addressing the UK Talent Gap</h3>
-          <p>SuperteamLearnUK is specifically designed to cultivate a pipeline of skilled Solana developers within the United Kingdom.</p>
-        </div>
-        
-        <div className="learn-uk-card">
-          <div className="card-icon"></div>
-          <h3>Production-Grade Curriculum</h3>
-          <p>Our structured learning paths transform candidates into job-ready engineers equipped with industry best practices.</p>
-        </div>
-        
-        <div className="learn-uk-card">
-          <div className="card-icon"></div>
-          <h3>Solana Ecosystem Mastery</h3>
-          <p>Comprehensive training in Rust, Anchor, and Solana development—building the technical foundation for Web3.</p>
-        </div>
-        
-        <div className="learn-uk-card">
-          <div className="card-icon"></div>
-          <h3>Seamless Ecosystem Onboarding</h3>
-          <p>Graduates flow directly into <strong>SuperteamEarn</strong> for freelance opportunities and <strong>Talent</strong> for full-time roles.</p>
-        </div>
+        {cards.map((card, i) => (
+          <motion.div
+            key={i}
+            className="learn-uk-card"
+            custom={i}
+            initial="hidden"
+            animate="visible"
+            variants={cardVariants}
+          >
+            <div className="card-icon"></div>
+            <h3>{card.title}</h3>
+            <p dangerouslySetInnerHTML={{ __html: card.description }} />
+          </motion.div>
+        ))}
       </div>
     </motion.div>
   );

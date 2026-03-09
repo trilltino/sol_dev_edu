@@ -3,7 +3,7 @@ export { AboutMePage } from './AboutMePage';
 export { RoadmapPage } from './RoadmapPage';
 export { WsAndHPage } from './WsAndHPage';
 export { WhoPage, WhatPage, WhenPage, WherePage, WhereAndWhoPage, WhyPage, HowPage } from './WsPages';
-export { BeginnerPage, IntermediatePage, AdvancedPage, WalkthroughPage, VideoContentPage } from './LevelPages';
+export { BeginnerPage, IntermediatePage, AdvancedPage, WalkthroughPage, VideoContentPage, LevelsPage } from './LevelPages';
 export { TinosRustLabPage } from './TinosRustLabPage';
 export { SuperteamLearnIDEExtensionPage } from './SuperteamLearnIDEExtensionPage';
 export { SuperteamLearnAppPage } from './SuperteamLearnAppPage';

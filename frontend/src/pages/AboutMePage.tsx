@@ -13,56 +13,50 @@ export const AboutMePage = () => {
       icon: <Boxes size={20} />,
       repos: [
         {
+          name: 'XFChess',
+          desc: 'Fully decentralized on-chain chess engine and game implementation on Solana.',
+          tech: ['Rust', 'Solana', 'WASM'],
+          link: 'https://github.com/trilltino/XFChess'
+        },
+        {
           name: 'xforce-terminal-contracts',
-          desc: 'Production-grade FOSS Solana smart contracts for atomic batch token swaps with Jupiter integration. Batch up to 10 swaps, slippage protection, protocol fee management.',
+          desc: 'Atomic batch token swaps on Solana with Jupiter integration and slippage protection.',
           tech: ['Rust', 'Anchor', 'Solana'],
           link: 'https://github.com/trilltino/xforce-terminal-contracts'
         },
         {
           name: 'anchor-vault',
-          desc: 'Solana DeFi program for secure lamport storage with PDAs and CPI. Features Program Derived Addresses and Cross-Program Invocation.',
+          desc: 'Secure lamport storage vault using PDAs and Cross-Program Invocation on Solana.',
           tech: ['Rust', 'Anchor', 'Solana'],
           link: 'https://github.com/trilltino/anchor-vault'
         },
         {
           name: 'xforce-monorepo',
-          desc: 'Comprehensive Solana DeFi ecosystem: XForce Terminal (desktop trading), XForce Terminal Contracts, XForce Crypto Info (sentiment analysis).',
-          tech: ['Rust', 'Tauri', 'React', 'TypeScript', 'PostgreSQL'],
+          desc: 'Full-stack Solana ecosystem including trading terminal, smart contracts, and sentiment analysis.',
+          tech: ['Rust', 'Solana', 'Tauri', 'TypeScript'],
           link: 'https://github.com/trilltino/xforce-monorepo'
         },
         {
           name: 'xforce-terminal',
-          desc: 'Desktop trading terminal & web wallet. Real-time charts (lightweight-charts), multi-wallet support (Phantom, Solflare, Backpack), Jupiter integration, WebSocket feeds.',
-          tech: ['Rust', 'Tauri', 'React', 'PostgreSQL'],
+          desc: 'Desktop trading terminal with real-time charts and multi-wallet Solana support.',
+          tech: ['Rust', 'Solana', 'Tauri', 'React'],
           link: 'https://github.com/trilltino/xforce-terminal'
         },
         {
-          name: 'xforce-crypto-info',
-          desc: 'Crypto news aggregation and analysis service. RSS feed aggregation from 10+ sources, sentiment analysis using NLTK/VADER, PostgreSQL storage.',
-          tech: ['Python', 'React', 'PostgreSQL'],
-          link: 'https://github.com/trilltino/xforce-crypto-info'
-        },
-        {
-          name: 'XFChess',
-          desc: 'Chess implementation.',
-          tech: ['Rust', 'Web'],
-          link: 'https://github.com/trilltino/XFChess'
-        },
-        {
           name: 'pinocchio_vault_challenge',
-          desc: 'Solana vault challenge using Pinocchio.',
-          tech: ['Rust', 'Solana'],
+          desc: 'Ultra-low compute Solana vault implementation using the Pinocchio no-std framework.',
+          tech: ['Rust', 'Solana', 'No-Std'],
           link: 'https://github.com/trilltino/pinocchio_vault_challenge'
         },
         {
           name: 'anchor_escrow_challenge',
-          desc: 'Anchor escrow implementation challenge.',
-          tech: ['Rust', 'Anchor'],
+          desc: 'Secure escrow program implementation using the Anchor framework on Solana.',
+          tech: ['Rust', 'Anchor', 'Solana'],
           link: 'https://github.com/trilltino/anchor_escrow_challenge'
         },
         {
           name: 'solana-spl-token-challenges',
-          desc: 'Solana SPL token challenges.',
+          desc: 'Comprehensive suite of SPL token management and integration challenges.',
           tech: ['Rust', 'Solana', 'SPL'],
           link: 'https://github.com/trilltino/solana-spl-token-challenges'
         }
@@ -74,63 +68,39 @@ export const AboutMePage = () => {
       repos: [
         {
           name: 'braid-reborn',
-          desc: 'Full-stack Rust implementation of Braid protocol. CRDT sync, P2P transport, filesystem replication, NFS bridge, and relay server. Workspace crates for HTTP, Core, Blob, Iroh, and more.',
-          tech: ['Rust', 'Tokio', 'Iroh', 'QUIC', 'Axum', 'CRDT'],
+          desc: 'Full-stack Rust implementation of the Braid protocol with CRDT sync and Iroh P2P transport.',
+          tech: ['Rust', 'Tokio', 'Iroh', 'CRDT'],
           link: 'https://github.com/trilltino/braid-reborn'
         },
         {
           name: 'xf_braid',
-          desc: 'XFMail: P2P real-time chat using BraidFS protocol with custom Braid-HTTP client. Hybrid storage, Myers diff, CRDT conflict resolution. XF Braid Website: SSR marketing site.',
-          tech: ['Rust', 'Leptos', 'Axum', 'Tailwind', 'WASM'],
+          desc: 'Real-time P2P chat (XFMail) using the BraidFS protocol and custom Braid-HTTP client.',
+          tech: ['Rust', 'Leptos', 'Axum', 'WASM'],
           link: 'https://github.com/trilltino/xf_braid'
         },
         {
           name: 'link-ide-extension',
-          desc: 'VS Code extension for P2P collaborative development. P2P Chat, File Sharing (bitswap), Content-addressed transfer (FastCDC, Blake3, Merkle trees), Audio calls infrastructure.',
+          desc: 'VS Code extension for P2P collaborative development featuring chat and file sharing.',
           tech: ['TypeScript', 'Rust', 'Iroh', 'VS Code API'],
           link: 'https://github.com/trilltino/link-ide-extension'
         },
         {
+          name: 'monorepo',
+          desc: 'Git-based version control system designed specifically for AI agent coordination.',
+          tech: ['Rust', 'Git'],
+          link: 'https://github.com/trilltino/monorepo'
+        },
+        {
           name: 'braid_iroh',
-          desc: 'Work-in-progress Braid over Iroh implementation.',
+          desc: 'Experimental implementation of the Braid protocol over the Iroh network stack.',
           tech: ['Rust', 'Iroh', 'QUIC'],
           link: 'https://github.com/trilltino/braid_iroh'
         },
         {
-          name: 'braid_tauri',
-          desc: 'WIP Tauri-based Braid client.',
-          tech: ['Rust', 'Tauri', 'WASM'],
-          link: 'https://github.com/trilltino/braid_tauri'
-        },
-        {
-          name: 'monorepo',
-          desc: 'Git-based version control system for AI agents.',
-          tech: ['Rust'],
-          link: 'https://github.com/trilltino/monorepo'
-        },
-        {
           name: 'braidfs-nfs',
-          desc: 'NFS bridge for Braid filesystem.',
-          tech: ['Rust'],
+          desc: 'NFS bridge enabling legacy filesystem access to the Braid decentralized network.',
+          tech: ['Rust', 'NFS'],
           link: 'https://github.com/trilltino/braidfs-nfs'
-        },
-        {
-          name: 'braid-http',
-          desc: 'Braid-HTTP protocol types and client.',
-          tech: ['Rust', 'WASM'],
-          link: 'https://github.com/trilltino/braid-http'
-        },
-        {
-          name: 'braid-blob',
-          desc: 'Binary storage engine for Braid.',
-          tech: ['Rust'],
-          link: 'https://github.com/trilltino/braid-blob'
-        },
-        {
-          name: 'braid-common',
-          desc: 'Shared utilities for Braid crates.',
-          tech: ['Rust'],
-          link: 'https://github.com/trilltino/braid-common'
         }
       ]
     }
@@ -165,29 +135,112 @@ export const AboutMePage = () => {
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'space-between',
-                  padding: '1rem 1.5rem',
-                  background: 'rgba(255,255,255,0.03)',
-                  border: '1px solid rgba(255,255,255,0.08)',
-                  borderRadius: '12px',
+                  padding: '1.25rem 1.75rem',
+                  background: expandedCategory === key ? 'rgba(255,255,255,0.06)' : 'rgba(255,255,255,0.03)',
+                  border: '1px solid rgba(255,255,255,0.1)',
+                  borderRadius: '16px',
                   cursor: 'pointer',
                   color: '#fff',
-                  transition: 'all 0.3s ease'
+                  transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+                  marginBottom: '0.75rem'
                 }}
               >
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                  <span style={{ color: 'var(--accent-color, #f59e0b)' }}>{category.icon}</span>
-                  <span style={{ fontSize: '1.1rem', fontWeight: 600 }}>{category.title}</span>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
                   <span style={{ 
-                    opacity: 0.6, 
+                    color: 'var(--accent-color, #f59e0b)',
+                    background: 'rgba(245, 158, 11, 0.1)',
+                    padding: '0.5rem',
+                    borderRadius: '10px',
+                    display: 'flex'
+                  }}>{category.icon}</span>
+                  <span style={{ fontSize: '1.2rem', fontWeight: 600, letterSpacing: '-0.01em' }}>{category.title}</span>
+                  <span style={{
+                    opacity: 0.5, 
                     fontSize: '0.85rem',
-                    background: 'rgba(255,255,255,0.1)',
-                    padding: '0.15rem 0.5rem',
-                    borderRadius: '20px'
+                    background: 'rgba(255,255,255,0.08)',
+                    padding: '0.2rem 0.6rem',
+                    borderRadius: '20px',
+                    fontWeight: 500
                   }}>
                     {category.repos.length} repos
                   </span>
                 </div>
+                <motion.span
+                  animate={{ rotate: expandedCategory === key ? 180 : 0 }}
+                  style={{ opacity: 0.5 }}
+                >
+                  <Network size={16} style={{ rotate: '45deg' }} />
+                </motion.span>
               </button>
+
+              {expandedCategory === key && (
+                <motion.div
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: 'auto' }}
+                  className="pow-repos-grid"
+                  style={{
+                    display: 'grid',
+                    gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
+                    gap: '1rem',
+                    padding: '0.5rem'
+                  }}
+                >
+                  {category.repos.map((repo, idx) => (
+                    <motion.a
+                      key={idx}
+                      href={repo.link}
+                      target="_blank"
+                      rel="noreferrer"
+                      initial={{ opacity: 0, scale: 0.95 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{ delay: idx * 0.05 }}
+                      style={{
+                        background: 'rgba(255, 255, 255, 0.02)',
+                        border: '1px solid rgba(255, 255, 255, 0.08)',
+                        borderRadius: '12px',
+                        padding: '1.25rem',
+                        textDecoration: 'none',
+                        color: 'inherit',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        justifyContent: 'space-between',
+                        gap: '0.75rem',
+                        transition: 'all 0.2s ease'
+                      }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.background = 'rgba(255, 255, 255, 0.04)';
+                        e.currentTarget.style.borderColor = 'rgba(245, 158, 11, 0.3)';
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.background = 'rgba(255, 255, 255, 0.02)';
+                        e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.08)';
+                      }}
+                    >
+                      <div>
+                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
+                          <h4 style={{ color: '#fff', fontSize: '1rem', fontWeight: 600 }}>{repo.name}</h4>
+                          <Github size={14} style={{ opacity: 0.4 }} />
+                        </div>
+                        <p style={{ color: '#a0a0a0', fontSize: '0.85rem', lineHeight: 1.5 }}>{repo.desc}</p>
+                      </div>
+                      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem' }}>
+                        {repo.tech.map((t, i) => (
+                          <span key={i} style={{
+                            fontSize: '0.7rem',
+                            padding: '0.15rem 0.5rem',
+                            background: t === 'Solana' ? 'rgba(153, 69, 255, 0.15)' : 'rgba(255, 255, 255, 0.05)',
+                            color: t === 'Solana' ? '#9945FF' : '#888',
+                            borderRadius: '4px',
+                            fontWeight: 600
+                          }}>
+                            {t}
+                          </span>
+                        ))}
+                      </div>
+                    </motion.a>
+                  ))}
+                </motion.div>
+              )}
             </div>
           ))}
         </div>

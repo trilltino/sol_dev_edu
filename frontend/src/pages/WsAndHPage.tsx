@@ -30,7 +30,7 @@ export const WsAndHPage = () => {
         <div style={{ marginTop: '2rem', display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1.5rem' }}>
           <div style={{ padding: '1.5rem', background: 'rgba(255,255,255,0.03)', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.08)' }}>
             <h3 style={{ color: 'var(--accent-color, #f59e0b)', marginBottom: '0.5rem' }}>Who?</h3>
-            <p className="b2">This section explores the people behind the project. Who is involved? Who are the key contributors?</p>
+            <p className="b2">Systems engineers and Rust developers from universities like Imperial and Oxford, ready to transition to Solana protocol engineering through high-signal content and chapter support.</p>
           </div>
           <div style={{ padding: '1.5rem', background: 'rgba(255,255,255,0.03)', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.08)' }}>
             <h3 style={{ color: 'var(--accent-color, #f59e0b)', marginBottom: '0.5rem' }}>What?</h3>

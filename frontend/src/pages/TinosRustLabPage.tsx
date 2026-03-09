@@ -68,7 +68,7 @@ export const TinosRustLabPage = () => {
               Inspiration
             </h3>
             <p className="b2" style={{ opacity: 0.9, textAlign: 'center' }}>
-              This series is heavily inspired by Jon Gjengst's legendary "Crust of Rust" series on YouTube—
+              This series is heavily inspired by <a href="https://www.youtube.com/watch?v=rAl-9HwD858&list=PLqbS7AVVErFiWDOAVrPt7aYmnuuOLYvOa" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-color, #f59e0b)', textDecoration: 'underline' }}>Jon Gjengst's legendary "Crust of Rust" series on YouTube</a>—
               the gold standard for in-depth Rust tutorials.
             </p>
             <p className="b2" style={{ marginTop: '1rem', opacity: 0.9, textAlign: 'center' }}>

@@ -18,6 +18,7 @@ const Navbar = () => {
   const [wsAndHDropdownOpen, setWsAndHDropdownOpen] = useState(false);
   const [contentDropdownOpen, setContentDropdownOpen] = useState(false);
   const [productsDropdownOpen, setProductsDropdownOpen] = useState(false);
+  const [levelsDropdownOpen, setLevelsDropdownOpen] = useState(false);
   const [hidden, setHidden] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
 
@@ -65,6 +66,23 @@ const Navbar = () => {
           )}
         </div>
         <Link to="/roadmap" className="nav-link">Roadmap&Metrics</Link>
+        <div
+          className="nav-dropdown"
+          onMouseEnter={() => setLevelsDropdownOpen(true)}
+          onMouseLeave={() => setLevelsDropdownOpen(false)}
+        >
+          <button className="nav-dropdown-btn">
+            Levels
+            <ChevronDown size={16} className={`nav-dropdown-icon ${levelsDropdownOpen ? 'open' : ''}`} />
+          </button>
+          {levelsDropdownOpen && (
+            <div className="nav-dropdown-menu">
+              <Link to="/levels?level=beginners" className="nav-dropdown-item" onClick={() => setLevelsDropdownOpen(false)}>Beginners</Link>
+              <Link to="/levels?level=intermediate" className="nav-dropdown-item" onClick={() => setLevelsDropdownOpen(false)}>Intermediate</Link>
+              <Link to="/levels?level=advanced" className="nav-dropdown-item" onClick={() => setLevelsDropdownOpen(false)}>Advanced</Link>
+            </div>
+          )}
+        </div>
         <div
           className="nav-dropdown"
           onMouseEnter={() => setProductsDropdownOpen(true)}

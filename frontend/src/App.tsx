@@ -19,7 +19,8 @@ import {
   TinosRustLabPage,
   SuperteamLearnIDEExtensionPage,
   SuperteamLearnAppPage,
-  ReasoningPage
+  ReasoningPage,
+  LevelsPage
 } from './pages';
 import './App.css';
 
@@ -50,6 +51,7 @@ function App() {
               <Route path="/super-team-learn-ide" element={<SuperteamLearnIDEExtensionPage />} />
               <Route path="/superteamlearn-app" element={<SuperteamLearnAppPage />} />
               <Route path="/reasoning" element={<ReasoningPage />} />
+              <Route path="/levels" element={<LevelsPage />} />
             </Routes>
           </AnimatePresence>
         </main>
